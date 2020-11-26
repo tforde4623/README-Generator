@@ -1,0 +1,19 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "a simple CLI tool to create a README.md file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tforde4623/README-Generator.git"
+  },
+  "author": "Tommy Forde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tforde4623/README-Generator/issues"
+  },
+  "homepage": "https://github.com/tforde4623/README-Generator#readme"
+}
