@@ -34,11 +34,15 @@ inquirer
       name: 'contributing',
       message: 'Contributions?'
     },
-    // tests
+    // tests (testInstructs)
     {
       type: 'input',
-      name: 'tests',
-      message: 'Tests?'
+      name: 'testInstructs',
+      message: 'Testing instructions?'
     }
     // ...
-])
+  ])
+  .then(answers => {
+    // write responses to README file
+    console.log(answers);
+  })
