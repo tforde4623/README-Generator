@@ -23,6 +23,16 @@ const questions = [
     name: 'useInfo',
     message: 'Usage information?'
   },
+  {
+    type: 'input',
+    name: 'credits',
+    message: 'Credits? Collaborators? Third party assets? Tutorials?'
+  },
+  {
+    type: '',
+    name: 'license',
+    message: 'Project license?'
+  },
   // contributions (contributing)
   {
     type: 'input',
