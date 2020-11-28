@@ -1,15 +1,19 @@
 const inquirer = require('inquirer');
-const questions = require('./assets/questions')
+const fs = require('fs');
+const questions = require('./assets/questions');
+const createTemplate = require('./assets/contentTemplate');
 
 // function to write readme file (using template string)
-const writeReadMe = () => {
-  // something here
+const writeReadMe = (data) => {
+  fs.writeFile(
+    "README.md",
+    createTemplate(data),
+    err => { if (err) throw err }
+  );
 }
 
 // asking questions via CL with inquirer
-inquirer
-  .prompt(questions)
-  .then(answers => {
-    // write responses to README file
-    console.log(answers); // returns an object of answers { key: 'name', value: 'response' }
-  })
+inquirer.prompt(questions)
+  .then(answers => { writeReadMe(answers); })
+  .catch(err => { if (err) throw err; });
+
