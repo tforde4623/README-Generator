@@ -1,48 +1,15 @@
-// "importing" inquirer module
 const inquirer = require('inquirer');
+const questions = require('./assets/questions')
+
+// function to write readme file (using template string)
+const writeReadMe = () => {
+  // something here
+}
 
 // asking questions via CL with inquirer
 inquirer
-  .prompt([
-    // title (title)
-    {
-      type: 'input',
-      name: 'title',
-      message: 'What is the name of your project?'
-    },
-    // description (desc)
-    {
-      type: 'input',
-      name: 'desc',
-      message: 'Description of your project?'
-    },
-    // installation instructions (instalInstructions)
-    {
-      type: 'input',
-      name: 'instalInstructions',
-      message: 'Installation instructions?'
-    },
-    // usage information (useInfo)
-    {
-      type: 'input',
-      name: 'useInfo',
-      message: 'Usage information?'
-    },
-    // contributions (contributing)
-    {
-      type: 'input',
-      name: 'contributing',
-      message: 'Contributions?'
-    },
-    // tests (testInstructs)
-    {
-      type: 'input',
-      name: 'testInstructs',
-      message: 'Testing instructions?'
-    }
-    // ...
-  ])
+  .prompt(questions)
   .then(answers => {
     // write responses to README file
-    console.log(answers);
+    console.log(answers); // returns an object of answers { key: 'name', value: 'response' }
   })
