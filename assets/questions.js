@@ -14,7 +14,7 @@ const questions = [
   // installation instructions (instalInstructions)
   {
     type: 'input',
-    name: 'instalInstructions',
+    name: 'installationInstructions',
     message: 'Installation instructions?'
   },
   // usage information (useInfo)
