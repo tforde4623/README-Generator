@@ -29,9 +29,13 @@ const questions = [
     message: 'Credits? Collaborators? Third party assets? Tutorials?'
   },
   {
-    type: '',
+    type: 'list',
     name: 'license',
-    message: 'Project license?'
+    message: 'Project license?',
+    // list of possible answers to be displayed
+    choices: ['MIT', 'GNU', 'GPL', 'LGPL', 'Creative Commons',
+      'Apache 2.0', 'BSD 2-Clause', 'BSD 3-Clause', 'Mozilla Public 2.0',
+      'Common Dev. & Distro.', 'Eclipse Public']
   },
   // contributions (contributing)
   {
