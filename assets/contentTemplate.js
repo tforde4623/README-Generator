@@ -1,29 +1,30 @@
 // readme layout
 const createTemplate = data => {
   return (
-`## ${data.title}
-***
+    `# __${data.title}__
 
-### Description
+
+## __Description__
 ***
 ${data.desc}
 
-### Installation
+## __Installation__
 ***
 ${data.installationInstructions}
 
-### Usage
+## __Usage__
 ***
 ${data.useInfo}
 
-### Credits
+## __Credits__
 ***
 ${data.credits}
 
-### License
+## __License__
 ***
 ${data.license}`
-// ... more
+    // ... more
   )
-}
+};
+
 module.exports = createTemplate;
