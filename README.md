@@ -2,7 +2,6 @@
 
 
 ## __Description__
-***
 A simple CLI tool that allows you to create a README for your project with ease. Using the inquirer node module, you can interact with this application though the command line. And focas on your content. Not your layout. That was my job.
 
 ## __Link to Video Download__
