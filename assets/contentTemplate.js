@@ -22,7 +22,15 @@ ${data.credits}
 
 ## __License__
 ***
-${data.license}`
+${data.license}
+
+## __Contributions__
+***
+${data.contributing}
+
+## __Testing Instructions__
+***
+${data.testInstructs}`
     // ... more
   )
 };
